@@ -1,0 +1,82 @@
+/*css reset*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+nav{
+	display: block;
+}
+
+
+ul {
+	list-style: none;
+	margin: 30px 10px;
+	float:right;
+}
+ul::after{
+	clear : right;
+}
+ul li{
+	display: inline-block;
+	margin: 10px;
+	background: gray;
+	width: 100px;
+	height:30px;
+	text-align:center;
+	padding-top:5px;
+}
+
+li a{
+	text-decoration: none;
+
+}
+li a:hover{
+	color: green;
+}
+
+
+.header1{
+	position: fixed;
+	top: 300px;
+	left: 50px;
+}
+.myicon{
+	display: none;
+}
+
+/*mobile*/
+
+@media only screen and (max-width:576px){
+	nav{
+		display:none;
+	}
+	ul li{
+	display: block;
+	
+	/*margin: 10px;*/
+	}
+
+	.myicon{
+			margin-top: 5px;
+			margin-bottom : 20px;
+			float: right;
+			font-size:30px;
+			color: blue;
+			display: block;
+			position: fixed;
+			top: 8px;
+			right: 10px;
+	}
+	.myicon::after{
+		clear : right;
+	}
+}
+
+@media only screen and (min-width:577px){
+	nav{
+	display: block;
+}
+	}
