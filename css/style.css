@@ -73,10 +73,10 @@ li a:hover{
 	.myicon::after{
 		clear : right;
 	}
+	.active{
+		display:block;
+	}
 }
 
-@media only screen and (min-width:577px){
-	nav{
-	display: block;
-}
+
 	}
