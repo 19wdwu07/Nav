@@ -4,6 +4,6 @@ console.log('hi');
 
 // click even for hamburger
 $('.myicon').click(function(){
-  $('nav').toggle();
+  $('nav').toggleClass("active");
 });
 
